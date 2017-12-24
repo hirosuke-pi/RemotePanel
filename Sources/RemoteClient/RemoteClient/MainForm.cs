@@ -81,10 +81,12 @@ namespace RemoteClient
 
             mainTask = Task.Factory.StartNew(() =>
             {
-                loadHeader();
+                //loadHeader();
                 setAccessSettings();
 
                 クライアントの停止SToolStripMenuItem.Enabled = true;
+                toolStrip_stop_bt.Enabled = true;
+                toolStrip_restart_bt.Enabled = false;
                 クライアントToolStripMenuItem.Enabled = false;
 
                 while (true)
@@ -603,6 +605,8 @@ namespace RemoteClient
             {
                 disconnectedFlag = true;
                 クライアントの停止SToolStripMenuItem.Enabled = false;
+                toolStrip_stop_bt.Enabled = false;
+                toolStrip_restart_bt.Enabled = true;
                 クライアントToolStripMenuItem.Enabled = true;
                 status_text.Text = "停止";
             }
@@ -622,7 +626,6 @@ namespace RemoteClient
         {
             MessageBox.Show(
                 "製作者: betacode_\r\n" +
-                "バージョン: v1.10\r\n" +
                 "開発URL: https://github.com/betacode-projects/RemotePanel\r\n"+
                 "製作者URL: https://twitter.com/betacode_",
                 "情報", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -676,6 +679,11 @@ namespace RemoteClient
 
         private void MainForm_MouseDown(object sender, MouseEventArgs e)
         {
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

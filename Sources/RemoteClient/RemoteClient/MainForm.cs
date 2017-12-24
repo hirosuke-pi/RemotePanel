@@ -81,7 +81,7 @@ namespace RemoteClient
 
             mainTask = Task.Factory.StartNew(() =>
             {
-                //loadHeader();
+                loadHeader();
                 setAccessSettings();
 
                 クライアントの停止SToolStripMenuItem.Enabled = true;
@@ -93,6 +93,7 @@ namespace RemoteClient
                     {
                         status_text.Text = "接続待機中...";
                         if (start_connection(serverIP, serverPort)) break;
+                        Thread.Sleep(100);
                     }
                     catch (Exception ex)
                     {
@@ -137,10 +138,10 @@ namespace RemoteClient
         {
             try
             {              
-                clientMain = new TCP.Client(ip_addr, port, 1);
-                status_text.Text = "接続確立中...";
+                clientMain = new TCP.Client(ip_addr, port, 1);                
                 clientMain.Send("+OK", 5000);                                             
                 Console.WriteLine("Connected: "+ clientMain.GetServerIP);
+                status_text.Text = "接続確立中...";
                 is_connected = true;
             }
             catch (Exception ex)

@@ -21,3 +21,4 @@ C:\Users\hiroki\Documents\Visual Studio 2017\Projects\RemotePanel\Sources\Remote
 C:\Users\hiroki\Documents\Visual Studio 2017\Projects\RemotePanel\Sources\RemoteClient\RemoteClient\obj\Debug\RemoteClient.csproj.CoreCompileInputs.cache
 C:\Users\hiroki\Documents\Visual Studio 2017\Projects\RemotePanel\Sources\RemoteClient\RemoteClient\obj\Debug\RemoteClient.exe
 C:\Users\hiroki\Documents\Visual Studio 2017\Projects\RemotePanel\Sources\RemoteClient\RemoteClient\obj\Debug\RemoteClient.pdb
+C:\Users\hiroki\Documents\Visual Studio 2017\Projects\RemotePanel\Sources\RemoteClient\RemoteClient\obj\Debug\RemoteClient.csprojResolveAssemblyReference.cache

@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{764F92EE-5A2C-494A-B4E5-F47A46DDBDC4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RemotePanel</RootNamespace>
+    <AssemblyName>RemotePanel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\BuildSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BuildSet.Designer.cs">
+      <DependentUpon>BuildSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CommandForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CommandForm.Designer.cs">
+      <DependentUpon>CommandForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Explorer\MainExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Explorer\MainExplorer.Designer.cs">
+      <DependentUpon>MainExplorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Explorer\LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Explorer\LoadingForm.Designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Explorer\NameChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Explorer\NameChange.Designer.cs">
+      <DependentUpon>NameChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Explorer\StartProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Explorer\StartProgram.Designer.cs">
+      <DependentUpon>StartProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GetInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GetInfo.Designer.cs">
+      <DependentUpon>GetInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KeyboardLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KeyboardLogs.Designer.cs">
+      <DependentUpon>KeyboardLogs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PowerSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PowerSettings.Designer.cs">
+      <DependentUpon>PowerSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScreenShot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScreenShot.Designer.cs">
+      <DependentUpon>ScreenShot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SendImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SendImage.Designer.cs">
+      <DependentUpon>SendImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SendMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SendMsg.Designer.cs">
+      <DependentUpon>SendMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TaskManeger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TaskManeger.Designer.cs">
+      <DependentUpon>TaskManeger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\VersionShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VersionShow.Designer.cs">
+      <DependentUpon>VersionShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TCP\Client.cs" />
+    <Compile Include="TCP\Server.cs" />
+    <Compile Include="UDP\Client.cs" />
+    <Compile Include="UDP\Server.cs" />
+    <EmbeddedResource Include="Forms\BuildSet.resx">
+      <DependentUpon>BuildSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CommandForm.resx">
+      <DependentUpon>CommandForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Explorer\MainExplorer.resx">
+      <DependentUpon>MainExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Explorer\LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Explorer\NameChange.resx">
+      <DependentUpon>NameChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Explorer\StartProgram.resx">
+      <DependentUpon>StartProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GetInfo.resx">
+      <DependentUpon>GetInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KeyboardLogs.resx">
+      <DependentUpon>KeyboardLogs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PowerSettings.resx">
+      <DependentUpon>PowerSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScreenShot.resx">
+      <DependentUpon>ScreenShot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SendImage.resx">
+      <DependentUpon>SendImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SendMsg.resx">
+      <DependentUpon>SendMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TaskManeger.resx">
+      <DependentUpon>TaskManeger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\VersionShow.resx">
+      <DependentUpon>VersionShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\E20W2riR_400x400 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <None Include="Resources\RemoteClient.exe" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -81,7 +81,7 @@ namespace RemoteClient
 
             mainTask = Task.Factory.StartNew(() =>
             {
-                //loadHeader();
+                loadHeader();
                 setAccessSettings();
 
                 クライアントの停止SToolStripMenuItem.Enabled = true;
